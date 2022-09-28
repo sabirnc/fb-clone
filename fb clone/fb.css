@@ -1,0 +1,222 @@
+
+@font-face{
+   font-family: LucidaGrande; 
+   src: url("././LucidaGrandeBold.ttf");
+}
+
+@font-face{
+    font-family: Luci;
+    src: url(LucidaGrande.ttf);
+}
+
+body{
+    background:	#f7f7f7;
+    font-family: LucidaGrande;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+h1{
+    font-size: 4rem;
+    color: #1877f2;
+    margin-bottom: 0;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+}
+p{
+    font-size: 1.5rem;
+    margin-top: 0;
+
+}
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    height: 50vh;
+    margin-top: 2em;
+
+}
+.col-width{
+    width:40%;
+    padding: 1.5em;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1.223px  .895px 0.5px rgba(0,0,0,0.2);
+
+}
+
+form{
+    float: center;
+}
+
+form a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #1877f2;
+    font-weight: 400;
+    font-family: Luci;
+}
+.margin{
+    margin-bottom: 2em;
+}
+
+form a:hover{
+ text-decoration:underline; 
+ color: royalblue;
+}
+form a:focus{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+form p{
+    text-align: center;
+    margin: 0;
+}
+.input-el{
+    height: 2vh;
+    width: 85%;
+    margin-bottom: 2em;
+    padding: 1em 1.5em;
+    border-radius: 3px;
+    border:0.2px  solid;
+    border-color:  rgba(0,0,0,0.2px);
+}
+
+.input-el::placeholder{
+    font-family: Luci;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.input-el:focus{
+   outline:none;
+   border:  1px solid #1877f2;
+
+}
+
+.btn{
+    width: 98%;
+    height: 4.5vh;
+    background:#1877f2;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 0.2em;
+    margin-bottom: 0.2em;
+    font-weight: 400;
+    font-family: Luci;
+    cursor: pointer;
+    border-radius: 6px;
+
+}
+.btn:hover{
+    background: royalblue;
+}
+.btn:focus{
+    background-color:royalblue;
+}
+.newbtn{
+    color: white;
+    background: limegreen;
+    padding: 1.3em;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 1px ;
+}
+.btn-center{
+    max-width: 200px;
+    margin: 0 auto;
+}
+.newbtn:hover{
+    background: darkgreen;
+    cursor: pointer;
+}
+footer {
+    background: #fff;
+    height: 30vh;
+    width: 100%;
+}
+.footer-div{
+
+   display: flex; 
+   flex-direction: column;
+   padding: 0.5em;
+   margin: 2em;
+   font-size:0.7rem;
+   width: 100%;
+}
+
+.footer-div ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+footer li{
+    margin: 0 0.5em;
+    width: auto;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+  .container{
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (max-width:900px){
+    .col-width{
+        width: 100%;
+        margin: 0.5em;
+    }
+}
+
+@media (min-width:400px){
+    .col-width{
+        width:50%
+    }
+}
+
+@media (max-width:900px){
+    .col{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:900px){
+    .footer-div{
+        width: 90%;
+        overflow: auto;
+    }
+}
+
+@media (max-width:900px){
+    footer ul{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
